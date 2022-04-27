@@ -1,0 +1,21 @@
+dir : abre o diretório(subpastas) na pasta atual
+
+cd/ : leva para a pasta raiz do sistema
+cd/ + nome da pasta : ir para uma pasta específica no diretório
+cd .. : retrocede 01 nivel na navegação
+
+cls : comando para limpar o terminal (limpar a tela)
+
+TECLA TAB	: Ativa a função auto completar
+
+mkdir + nome da pasta : cria uma pasta através do terminal
+
+echo : imprime uma frase no terminal
+echo + frase/ palavra + > + nome do arquivo/ pasta : imprime uma frase em um documento/pasta específica no sistema
+ (caso a pasta ou documento não exista ele será criado  lembrando que deve ser colocado o formato do documento no caso de arquivo e texto deve ser.txt por exemplo.
+
+del + nome da pasta/documento : apaga o conteúdo da pasta/documento descrito
+
+rmdir + nome do repositorio(pasta)+ /S /Q : apaga o nome da pasta selecionada
+
+seta para cima/ seta para baixo : navega entre os comandos já executados recentemente no terminal
