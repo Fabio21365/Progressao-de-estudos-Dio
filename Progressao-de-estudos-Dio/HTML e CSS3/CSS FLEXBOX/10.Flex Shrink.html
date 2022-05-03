@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Shrink</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;  
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+        .item{
+            background-color: orangered;
+            margin: 5px;   
+            font-size: 24px;
+            text-align: center;
+        }
+        .shrink-1{
+            flex-shrink: 1;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .shrink-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .shrink-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .shrink-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+        </style>
+</head>
+<body>
+    <p>flex-shrink:1</p>
+    <div class="flex container">
+        <div class="item shrink-1 fg-1">A</div>
+        <div class="item shrink-1 fg-1">B</div>
+        <div class="item shrink-1 fg-1">C</div>
+        <div class="item shrink-1 fg-1">D</div>
+        <div class="item shrink-1 fg-1">E</div>
+    </div>
+    <div class="flex container">
+        <div class="item shrink-1 fg-1">A</div>
+        <div class="item shrink-1 fg-1">is simply  text of the printing</div>
+        <div class="item shrink-1 fg-1">C</div>
+        <div class="item shrink-1 fg-1">D</div>        
+    </div>    
+    <p>flex-shrink:0 + basis 100px</p>
+    <div class="flex container">
+        <div class="item shrink-0 fg-1">A</div>
+        <div class="item shrink-0 fg-1">is simply  text of the printing</div>
+        <div class="item shrink-0 fg-1">C</div>
+        <div class="item shrink-0 fg-1">D</div>    
+    </div>
+    <p>flex-shrink:variado + basis 100px</p>
+    <div class="flex container">
+        <div class="item shrink-1 fg-1">A</div>
+        <div class="item shrink-2 fg-1">is simply  text</div>
+        <div class="item shrink-2 fg-1">C</div>
+        <div class="item shrink-3 fg-1">D</div>  
+    </div>    
+</body>
+</html>

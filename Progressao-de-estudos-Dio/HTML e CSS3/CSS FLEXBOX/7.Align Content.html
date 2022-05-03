@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fundamentos - Align Content</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .container{
+                height: 350px;
+                max-width: 300px;
+              
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid black;
+            }
+            
+            .item{
+                background-color: orangered;
+                padding: 0 5px;
+                flex: 1;
+                text-align: center;
+                color: white;
+                margin:5px;
+                border: 2px solid black;
+            }
+            .stretch{
+                align-content: stretch;
+            }
+            .center{
+                align-content: center;
+            }
+            .flex-start{
+                align-content: flex-start;
+            }
+            .flex-end{
+                align-content: flex-end;
+            }
+            .space-around{
+                align-content: space-around;
+            }
+            .space-between{
+                align-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Strech</p>
+        <div class="container stretch">
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only </div>
+            <div class="item">It has survived not only five </div>
+            <div class="item">is simply dummy text of the printing and typesetting industry.only five centuries </div>
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only five centuries</div>
+        </div>
+
+        <p>Center</p>
+        <div class="container center">
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only </div>
+            <div class="item">It has survived not only five </div>
+            <div class="item">is simply dummy text of the printing and typesetting industry.only five centuries </div>
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only five centuries</div>
+        </div>
+
+        <p>Flex-start</p>
+        <div class="container flex-start">
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only </div>
+            <div class="item">It has survived not only five </div>
+            <div class="item">is simply dummy text of the printing and typesetting industry.only five centuries </div>
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has survived not only five centuries</div>
+        </div>
+
+        <p>Flex-end</p>
+        <div class="container flex-end">
+            <div class="item">It has survived not </div>
+            <div class="item">It has survived not only </div>
+            <div class="item">It has survived not only five </div>
+            <div class="item">is simply dummy text of  </div>
+            <div class="item">It has survived not only five centuries</div>
+            <div class="item">It has </div>
+            <div class="item">It has survived </div>
+        </div>
+
+        <p>space-around</p>
+        <div class="container space-around">
+            <div class="item">It has survived not only</div>
+            <div class="item">It has survived not only </div>
+            <div class="item">It has survived  </div>
+            <div class="item">is simply dummy text of the printing  </div>
+            <div class="item">It </div>
+            <div class="item">It has survived </div>
+            <div class="item">It has survived not only five centuries</div>
+        </div>
+
+        <p>space-between</p>
+        <div class="container space-between">
+            <div class="item">It has survived</div>
+            <div class="item">It has survived not only </div>
+            <div class="item">It has survived  </div>
+            <div class="item">is simply dummy text of the printing  </div>
+            <div class="item">It </div>
+            <div class="item">It has survived </div>
+            <div class="item">It has survived not only five centuries</div>
+        </div>
+        
+    </body>
+</html>
