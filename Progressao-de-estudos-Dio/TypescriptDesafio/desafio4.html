@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <script src="dist/desafios/desafio4.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="login-container" class="container">
+        <h2>Login</h2>
+        <input id="username" placeholder="Username" onchange="preencherLogin(event)">
+        <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+        <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+        <button id="login-button" disabled>Login</button>
+    </div>
+    <div>
+        <div class="container" id="create-list-container">
+            <h2>Create New List</h2>
+            <input placeholder="List name" id="new-list-name">
+            <textarea placeholder="List description" id="new-list-description" cols="30" rows="3"></textarea>
+            <button id="create-list-button">Create New List</button>
+        </div>
+        <div class="container" id="list-container">
+            <h2>Film Lists</h2>
+            <select id="list-selector"></select>
+            <h3>
+                Description:
+            </h3>
+            <span id="selected-list-description">
+
+            </span>
+            <table class="film-list-view">
+            </table>
+        </div>
+    </div>
+    <div id="search-container" class="container">
+        <input id="search-text" placeholder="Nome do filme">
+        <button id="search-button">Procurar Filme</button>
+        <table class="film-list-view">
+        </table>
+        <div class="list-page-navigation">
+            <button><</button>
+            <span>1</span>
+            <button>></button>
+        </div>
+    </div>
+</body>
+
+</html>
